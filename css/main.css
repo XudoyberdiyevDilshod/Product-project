@@ -1077,67 +1077,6 @@ img {
 
 /* footer finish */
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min--moz-device-pixel-ratio: 2),
-  only screen and (-o-min-device-pixel-ratio: 2/1),
-  only screen and (min-device-pixel-ratio: 2),
-  only screen and (min-resolution: 192dpi),
-  only screen and (min-resolution: 2dppx) {
-  .hero-inner {
-    background-image: url("../images/social-media@2x.png");
-  }
-
-  .content__list:nth-child(1) {
-    background-image: url("../images/Management@2x.png");
-  }
-
-  .content__list:nth-child(2) {
-    background-image: url("../images/Customer-support@2x.png");
-  }
-
-  .content__list:nth-child(3) {
-    background-image: url("../images/Collaborative@2x.png");
-  }
-
-  .one {
-    background-image: url("../images/woman@2x.png");
-  }
-
-  .two {
-    background-image: url("../images/grandmother@2x.png");
-  }
-
-  .three {
-    background-image: url("../images/Photographer@2x.png");
-  }
-
-  .four {
-    background-image: url("../images/Man@2x.png");
-  }
-
-  .client-item__text {
-    background-image: url("../images/star-color@2x.png"),
-      url("../images/star-color@2x.png"), url("../images/star-color@2x.png"),
-      url("../images/star-color@2x.png"), url("../images/star@2x.png");
-  }
-
-  .active--span1 {
-    background-image: url("../images/wahid@2x.png");
-  }
-
-  .active--span2 {
-    background-image: url("../images/ari@2x.png");
-  }
-
-  .active--span3 {
-    background-image: url("../images/Man@2x.png");
-  }
-
-  .article__inner {
-    background-image: url("../images/article__bgc@2x.png");
-  }
-}
-
 /* PRICING.HTML start */
 
 /* section price start */
@@ -1386,3 +1325,70 @@ img {
 }
 
 /* PRICING.HTML finish */
+
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .hero-inner {
+    background-image: url("../images/social-media@2x.png");
+  }
+
+  .content__list:nth-child(1) {
+    background-image: url("../images/Management@2x.png");
+  }
+
+  .content__list:nth-child(2) {
+    background-image: url("../images/Customer-support@2x.png");
+  }
+
+  .content__list:nth-child(3) {
+    background-image: url("../images/Collaborative@2x.png");
+  }
+
+  .one {
+    background-image: url("../images/woman@2x.png");
+  }
+
+  .two {
+    background-image: url("../images/grandmother@2x.png");
+  }
+
+  .three {
+    background-image: url("../images/Photographer@2x.png");
+  }
+
+  .four {
+    background-image: url("../images/Man@2x.png");
+  }
+
+  .client-item__text {
+    background-image: url("../images/star-color@2x.png"),
+      url("../images/star-color@2x.png"), url("../images/star-color@2x.png"),
+      url("../images/star-color@2x.png"), url("../images/star@2x.png");
+  }
+
+  .active--span1 {
+    background-image: url("../images/wahid@2x.png");
+  }
+
+  .active--span2 {
+    background-image: url("../images/ari@2x.png");
+  }
+
+  .active--span3 {
+    background-image: url("../images/Man@2x.png");
+  }
+
+  .article__inner {
+    background-image: url("../images/article__bgc@2x.png");
+  }
+
+  .effects__content {
+    background-image: url("../images/work-table@2x.png");
+  }
+}
