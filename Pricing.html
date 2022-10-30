@@ -9,31 +9,60 @@
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>   
-    <header class="header">
-        <div class="container">
-            <div class="header__inner">
-                <a class="header__link" href="./index.html">
-                    <img class="" src="./images/logo.svg" alt="site logo" width="200" height="36">
-                </a>
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a class="nav__link" href="./index.html">Product</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#">Customers</a></li>
-                        <li class="nav__item"><a class="nav__link nav__active" href="./Pricing.html">Pricing</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#">Resources</a></li>
-                    </ul>
-                </nav>
-                <ul class="header__list">
-                    <li class="header__item"><a class="header__link--list" href="#">Sign In</a></li>
-                    <li class="header__item"><a class="header__link--list active--link" href="#">Sign Up</a></li>
-                </ul>
-                <span class="mode">
-                    <button class="visually-hidden" type="submit">Button</button>
-                    <img src="./images/icon.png" srcset="./images/icon.png 1x, ./images/icon@2x.png 2x" alt="icon" width="32" height="32">
-                </span>
-            </div>
-        </div>
-    </header>
+  <header class="site-header">
+    <div class="container">
+      <div class="site-header__inner">
+        <a class="logo" href="./index.html">
+          <img class="logo__img" src="./images/logo.svg" alt="Site logo"
+          width="162" height="30">
+        </a>
+
+        <nav class="navbar">
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a class="navbar__link" href="./index.html">
+                Product
+              </a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#"> Customers </a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link navbar__link--active" href="./Pricing.html"> Pricing </a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#"> Resources </a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link main-btn login-btn" href="#">
+                Sign In
+              </a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link main-btn regiter-btn" href="#">
+                Sign Up
+              </a>
+            </li>
+            <li class="navbar__item">
+              <span class="mode">
+                <button class="visually-hidden" type="submit">Button</button>
+                <img src="./images/mode-button.svg" alt="icon" width="32" height="32">
+            </span>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="menu-btn">
+          <img
+            src="./images/menu.svg"
+            alt="Menu button"
+            width="28"
+            height="31"
+          />
+        </button>
+      </div>
+    </div>
+  </header>
     
     <main>
         <section class="price">

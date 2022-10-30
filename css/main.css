@@ -90,58 +90,11 @@ img {
   padding: 0 20px;
 }
 
-/* header start */
-
-html {
-  height: 100%;
-  scroll-behavior: smooth;
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-}
-
-main {
-  flex-grow: 1;
-}
-
-img {
-  vertical-align: middle;
-  object-fit: cover;
-}
-
-.visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-.container {
-  width: 100%;
-  max-width: 1150px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 /* section site-header start */
 
 .site-header {
   padding: 19px 0;
-  background: #ffffff;
+  background: var(--main-body-color);
 }
 
 .site-header__inner {
@@ -169,7 +122,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
-  color: #22343d;
+  color: var(--main-text-color);
   text-decoration: none;
 }
 
@@ -189,7 +142,7 @@ img {
 }
 
 .login-btn {
-  color: #22343d;
+  color: var(--main-text-color);
   background-color: transparent;
   border: 1px solid #bcd0e5;
 }
@@ -240,7 +193,7 @@ img {
   font-weight: 700;
   font-size: 40px;
   line-height: 60px;
-  color: #22343d;
+  color: var(--main-text-color);
 }
 
 .hero__text {
@@ -248,7 +201,7 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  color: #22343d;
+  color: var(--main-text-color);
 }
 
 .hero__links {
@@ -329,7 +282,7 @@ img {
 
 .product {
   padding: 0 0 90px;
-  background-image: url("../images/Bg.png");
+  background-image: var(--main-bgc-img);
   background-repeat: no-repeat;
   background-position: bottom center;
 }
@@ -345,7 +298,7 @@ img {
   font-size: 32px;
   line-height: 48px;
   text-align: center;
-  color: #22343d;
+  color: var(--main-text-color);
 }
 
 .product__list {
@@ -390,7 +343,7 @@ img {
   font-weight: 600;
   font-size: 22px;
   line-height: 33px;
-  color: #22343d;
+  color: var(--main-text-color);
 }
 
 .product-card__text {
@@ -398,7 +351,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
-  color: #22343d;
+  color: var(--main-text-color);
 }
 
 .product__btn {
@@ -776,6 +729,57 @@ img {
 
   .message-link {
     margin: 200px auto 0;
+  }
+
+  .span1 {
+    top: 68px;
+    left: 32px;
+  }
+
+  .two {
+    top: 220px;
+    left: 110px;
+    background-image: url("../images/grandmother.png");
+  }
+
+  .three {
+    bottom: 20px;
+    left: 110px;
+    background-image: url("../images/Photographer.png");
+  }
+
+  .four {
+    top: 110px;
+    left: -150px;
+    background-image: url("../images/Man.png");
+  }
+
+  .text1 {
+    top: 20px;
+    left: 100px;
+    width: 229px;
+  }
+
+  .text2 {
+    top: 220px;
+    left: -150px;
+    width: 215px;
+    text-align: center;
+  }
+
+  .text3 {
+    bottom: 20px;
+    left: -140px;
+    width: 237px;
+    text-align: center;
+  }
+
+  .text4 {
+    top: 110px;
+    left: -50px;
+    width: 239px;
+    padding: 10px 20px 52px 33px;
+    text-align: center;
   }
 }
 
