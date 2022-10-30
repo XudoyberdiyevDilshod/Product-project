@@ -1502,6 +1502,8 @@ img {
   background-color: #02897a;
   border-radius: 8px;
   width: 224px;
+  color: #fff;
+  text-decoration: none;
 }
 
 /* section enterprise finish */
