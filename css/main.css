@@ -5,6 +5,7 @@
   --main-sign-in-color: #173a56;
   --main-bgc-img: url("../images/Bg.png");
   --main-bgc-up-img: url("../images/Bg-up.png");
+  --main-bg-color: #f5f5f5;
 }
 
 .dark {
@@ -14,6 +15,7 @@
   --main-sign-in-color: #fff;
   --main-bgc-img: url("../images/Bg-color.png");
   --main-bgc-up-img: url("../images/Bg-up-color.png");
+  --main-bg-color: #22343d;
 }
 
 @font-face {
@@ -93,6 +95,11 @@ img {
 /* section site-header start */
 
 .site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
   padding: 19px 0;
   background: var(--main-body-color);
 }
@@ -174,6 +181,7 @@ img {
 /* section hero start */
 
 .hero {
+  padding-top: 80px;
 }
 
 .hero__inner {
@@ -875,6 +883,8 @@ img {
 }
 
 .strategies__item {
+  width: 100%;
+  max-width: 348px;
   border: 1px solid #efefef;
   background: #ffffff;
   border-radius: 8px;
@@ -1078,7 +1088,6 @@ img {
 }
 
 @media only screen and (max-width: 576px) {
-
   .price__inner {
     padding-top: 61px;
   }
@@ -1086,16 +1095,15 @@ img {
   .price__list {
     flex-wrap: wrap;
   }
-}
-
-@media only screen and (max-width: 365px) {
-  .price__list {
-    flex-wrap: wrap;
-  }
-
   .strategies__circle-box {
     display: none;
   }
+  .price__item {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 365px) {
 }
 
 /* section price finish */
@@ -1395,13 +1403,12 @@ img {
   }
 
   .footer-logo__list {
-    margin: 0 auto ;
+    margin: 0 auto;
     gap: 24px;
     width: 162px;
   }
 
   .footer-logo__item {
-    
   }
 
   .footer-list__item {
@@ -1412,8 +1419,6 @@ img {
   .footer-item {
     display: block;
   }
-
-
 }
 
 @media only screen and (max-width: 365px) {
@@ -1427,6 +1432,12 @@ img {
 /* PRICING.HTML start */
 
 /* section price start */
+
+.pricing__content {
+  width: 100%;
+  max-width: 721px;
+  margin: 0 auto;
+}
 
 .pricing-title {
   margin: 0;
@@ -1455,25 +1466,28 @@ img {
   color: var(--main-text-color);
 }
 
+@media only screen and (max-width: 576px) {
+  .pricing-title__text {
+    margin: 30px 0 18px;
+    font-size: 36px;
+    line-height: 54px;
+  }
+}
+
 /* section price finish */
 
 /* section enterprise start */
 
 .enterprise {
-  background-color: linear-gradient(
-    180deg,
-    #f7f7f7 0%,
-    rgba(247, 247, 247, 0) 100%
-  );
+  background-color: var(--main-bg-color);
 }
 
 .enterprise__inner {
   text-align: center;
-  padding: 53px 0 201px;
+  padding: 53px 0 51px;
 }
 
 .enterprise__title {
-  margin: 0;
   font-weight: 600;
   font-size: 24px;
   line-height: 36px;
@@ -1498,12 +1512,23 @@ img {
 }
 
 .enterprise__link {
+  display: block;
+  margin: 0 auto;
   padding: 11px 18px;
   background-color: #02897a;
   border-radius: 8px;
   width: 224px;
   color: #fff;
+  text-align: center;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 576px) {
+  .enterprise__strong {
+    margin: 24px 0 25px;
+    font-size: 32px;
+    line-height: 48px;
+  }
 }
 
 /* section enterprise finish */
@@ -1511,7 +1536,7 @@ img {
 /* section effects start */
 
 .effects {
-  padding-bottom: 149px;
+  padding: 150px 0 149px;
 }
 
 .effects__title {
@@ -1534,7 +1559,8 @@ img {
 }
 
 .effects__list {
-  width: 540px;
+  width: 100%;
+  max-width: 540px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -1588,6 +1614,20 @@ img {
   align-items: center;
   color: var(--main-text-color);
 }
+@media only screen and (max-width: 576px) {
+  .effects__title {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .effects__content {
+    padding-top: 570px;
+    background-size: 352px 288px;
+    background-position: top center;
+  }
+  .effects__list {
+    margin-left: 0;
+  }
+}
 /* section effects finish */
 
 .question {
@@ -1627,7 +1667,8 @@ img {
 }
 
 .question__item {
-  width: 920px;
+  width: 100%;
+  max-width: 920px;
   padding-bottom: 22px;
   border-bottom: 1px solid #e7e7e7;
 }
@@ -1673,7 +1714,134 @@ img {
   color: var(--main-text-color);
 }
 
+@media only screen and (max-width: 576px) {
+  .question {
+    padding-top: 200px;
+  }
+}
+
 /* PRICING.HTML finish */
+
+/* Customers.html start */
+
+/* section clients start */
+
+.clients {
+  padding-top: 80px;
+}
+
+.clients__inner {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 100px 0 133px;
+}
+
+.clients__title {
+  margin: 0 0 50px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: var(--main-text-color);
+  text-align: center;
+}
+
+.clients__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clients__link {
+  text-decoration: none;
+}
+
+/* section clients finish */
+
+/* section holder start */
+
+.holder {
+  background-color: var(--main-bg-color);
+}
+
+.holder__inner {
+  padding: 24px 0 68px;
+}
+
+.holder__title {
+  margin: 0 0 50px;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 51px;
+  text-align: center;
+  color: var(--main-text-color);
+}
+
+.holder__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.holder__item {
+  width: 100%;
+  max-width: 350px;
+  padding: 32px 26px 34px;
+  border: 1px solid #dedede;
+  border-radius: 10px;
+}
+
+.holder-item__title {
+  margin: 32px 0 16px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: var(--main-text-color);
+}
+
+.holder-item__title::before {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto 32px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  content: "";
+}
+
+.holder-item__title--1::before {
+  background-image: url("../images/click.svg");
+}
+
+.holder-item__title--2::before {
+  background-image: url("../images/surveys.svg");
+}
+
+.holder-item__title--3::before {
+  background-image: url("../images/red-heart.svg");
+}
+
+.holder-item__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: var(--main-text-color);
+}
+
+/* section holder finish */
+
+/* Customers.html finish */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min--moz-device-pixel-ratio: 2),
