@@ -2530,4 +2530,22 @@ img {
   .effects__content {
     background-image: url("../images/work-table@2x.png");
   }
+  .Product-work__item:nth-child(1) {
+    background-image: url("../images/mac1@2x.png");
+  }
+  
+  .Product-work__item:nth-child(2) {
+    background-image: url("../images/mac2@2x.png");
+  }
+  
+  .Product-work__item:nth-child(3) {
+    background-image: url("../images/mac3@2x.png");
+  }
+  .chats__inner {
+    background-image: url("../images/Chat-bot@2x.png");
+  }
+  .chats__span::before {
+    background-image: url("../images/p3@2x.png"), url("../images/p1@2x.png"),
+      url("../images/p2@2x.png");
+  }
 }
